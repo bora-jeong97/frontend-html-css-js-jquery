@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .b{
+            border : solid 1px black;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+    
+    <h1>grid system</h1>
+    <!-- 한 줄은 총 12개의 블록으로 이루어진다 4 4 4 12개가 넘어가면 한 줄 아래로 작성된다-->
+    
+    <div class="container">
+    <!-- <div class="container-fluid"> 여백을 없애고 싶을때 -->
+        <div class="row">
+            <div class="col-md-6 b col-sm-6">hello</div>
+            <div class="col-md-3 b col-sm-6">hello</div>
+            <div class="col-md-3 b col-sm-12">hello</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 b">hello</div>
+            <div class="col-md-4 b">hello</div>
+            <div class="col-md-4 b">hello</div>
+        </div>
+        <!-- offset-md-4 은 4개의 컬럼을 빈칸으로 차지한다 -->
+        <div class="row">
+            <div class="col-md-4 offset-md-4 b">hello</div>
+            <div class="col-md-4 b">hello</div>
+
+        </div>
+    </div>
+
+</body>
+</html>
